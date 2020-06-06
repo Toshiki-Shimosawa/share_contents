@@ -21,3 +21,16 @@ module AppName
     # the framework and any gems in your application.
   end
 end
+
+module CooklogForNote
+  class Application < Rails::Application
+    config.generators do |g|
+      （省略）
+      g.test_framework :rspec,
+        controller_specs: false,
+        view_specs: false,
+        helper_specs: false,
+        routing_specs: false
+      end
+  end
+end
