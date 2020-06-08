@@ -52,6 +52,7 @@ group :development do
   gem 'rspec-rails', '~> 4.0.0.beta2'
   gem 'spring-commands-rspec'
   gem 'rails-controller-testing'
+  gem 'rubocop-airbnb', '~> 3.0', '>= 3.0.2'
 end
 
 group :test do
@@ -63,6 +64,7 @@ group :test do
   gem 'rspec-rails', '~> 4.0.0.beta2'
   gem 'rails-controller-testing'
   gem 'webdrivers'
+  gem 'rubocop-airbnb', '~> 3.0', '>= 3.0.2'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
