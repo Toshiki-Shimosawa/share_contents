@@ -53,6 +53,7 @@ group :development do
   gem 'spring-commands-rspec'
   gem 'rails-controller-testing'
   gem 'rubocop-airbnb', '~> 3.0', '>= 3.0.2'
+  gem "factory_bot_rails", "~> 4.10.0" 
 end
 
 group :test do
@@ -65,9 +66,11 @@ group :test do
   gem 'rails-controller-testing'
   gem 'webdrivers'
   gem 'rubocop-airbnb', '~> 3.0', '>= 3.0.2'
+  gem "factory_bot_rails", "~> 4.10.0" 
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
+gem 'faker' 
