@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe "ユーザー登録", type: :request do
-　（省略）
+
   it "有効なユーザーで登録" do
     expect {
       post users_path, params: { user: { name: "Example User",

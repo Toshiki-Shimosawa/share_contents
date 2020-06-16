@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "Users", type: :system do
+  let!(:user) { create(:user) }
   describe "ユーザー登録ページ" do
     before do
       visit signup_path
@@ -14,7 +15,7 @@ RSpec.describe "Users", type: :system do
       it "正しいタイトルが表示されることを確認" do
         expect(page).to have_title full_title('ユーザー登録')
       end
-      
+    end
       context "ユーザー登録処理" do
         it "有効なユーザーでユーザー登録を行うとユーザー登録成功のフラッシュが表示されること" do
           fill_in "ユーザー名", with: "Example User"
